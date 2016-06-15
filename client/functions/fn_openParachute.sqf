@@ -24,7 +24,7 @@ else
 		A3W_openParachute_frameCheck = nil;
 	};
 
-	A3W_openParachute_frameCheck = addMissionEventHandler ["EachFrame", 
+	A3W_openParachute_frameCheck = addMissionEventHandler ["EachFrame",
 	{
 		if (!isNil "A3W_openParachute_frameCheck" && {PARACHUTE_PRECHECK}) then
 		{

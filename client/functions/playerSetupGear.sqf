@@ -16,7 +16,7 @@ _goggles = [_player, "goggles"] call getDefaultClothing;
 
 if (_uniform != "") then { _player addUniform _uniform };
 if (_vest != "") then { _player addVest _vest };
-if (_headgear != "") then { _player addHeadgear _headgear };
+//if (_headgear != "") then { _player addHeadgear _headgear };
 if (_goggles != "") then { _player addGoggles _goggles };
 
 sleep 0.1;
@@ -33,7 +33,9 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 // Add NVG
 _player linkItem "NVGoggles";
 
-_player addBackpack "B_AssaultPack_rgr";
+_this call classes;
+
+/*_player addBackpack "B_AssaultPack_rgr";
 
 _player addMagazine "9Rnd_45ACP_Mag";
 _player addWeapon "hgun_ACPC2_F";
@@ -41,7 +43,7 @@ _player addMagazine "9Rnd_45ACP_Mag";
 _player addMagazine "9Rnd_45ACP_Mag";
 _player addMagazine "9Rnd_45ACP_Mag";
 _player addItem "FirstAidKit";
-_player selectWeapon "hgun_ACPC2_F";
+_player selectWeapon "hgun_ACPC2_F";*/
 
 switch (true) do
 {
