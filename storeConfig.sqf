@@ -791,19 +791,19 @@ landArray = compileFinal str
 	["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"],
 	["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"],
 
-	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper (NATO)", "B_UGV_01_F", 8000, "vehicle"],
 	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper (AAF)", "I_UGV_01_F", 8000, "vehicle"],
 	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
+	["UGV Saif (CSAT)", "O_UGV_01_F", 8000, "vehicle"],
 	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
 [
-	["Prowler (Doorless) [DLC]", "B_CTRG_LSV_01_light_F", 4500, "vehicle"],
+	["Prowler (Doorless) [DLC]", "B_CTRG_LSV_01_light_F", 2500, "vehicle"],
 	["Prowler [DLC]", "B_T_LSV_01_unarmed_F", 4000, "vehicle"],
-	["Prowler HMG [DLC]", "B_T_LSV_01_armed_F", 4000, "vehicle"],
+	["Prowler HMG [DLC]", "B_T_LSV_01_armed_F", 8000, "vehicle"],
 	["Qilin [DLC]", "O_T_LSV_02_unarmed_F", 4000, "vehicle"],
 	["Qilin Minigun [DLC]", "O_T_LSV_02_armed_F", 12000, "vehicle"],
 
@@ -881,13 +881,13 @@ planesArray = compileFinal str
 	["Y-32 Xi'an [DLC]", "O_T_VTOL_02_infantry_F", 100000, "vehicle"],
 
 	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 40000, "vehicle"],
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 20000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 35000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
 	["K40 Ababil-3 Missile UAV (CSAT)", "O_UAV_02_F", 40000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 20000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 35000, "vehicle"],
 	["K40 Ababil-3 Missile UAV (AAF)", "I_UAV_02_F", 40000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 20000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 35000, "vehicle"],
 
-	["KH-3A Fenghuang UAV [DLC]", "O_T_UAV_04_CAS_F", 80000, "vehicle"]
+	["KH-3A Fenghuang UAV [DLC]", "O_T_UAV_04_CAS_F", 60000, "vehicle"]
 ];
 
 boatsArray = compileFinal str
