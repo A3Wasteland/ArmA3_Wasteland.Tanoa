@@ -28,6 +28,7 @@ civilianVehicles =
 	"C_Offroad_01_F",
 	"I_G_Offroad_01_F",
 	"C_Van_01_box_F",
+	"C_Offroad_02_unarmed_F",
 	"C_Van_01_transport_F"
 ];
 
@@ -54,7 +55,10 @@ mediumMilitaryVehicles =
 //	"O_Truck_02_medical_F",
 	"B_MRAP_01_F",
 	"O_MRAP_02_F",
-	"I_MRAP_03_F"
+	"I_MRAP_03_F",
+	"B_CTRG_LSV_01_light_F",
+	"B_T_LSV_01_unarmed_F",
+	"O_T_LSV_02_unarmed_F"
 ];
 
 //Water Vehicles - Random Spawns
@@ -75,7 +79,9 @@ waterVehicles =
 	"I_Boat_Armed_01_minigun_F",
 	"C_Boat_Civil_01_F",
 	"C_Boat_Civil_01_police_F",
-	"C_Boat_Civil_01_rescue_F"
+	"C_Boat_Civil_01_rescue_F",
+	"I_C_Boat_Transport_02_F",
+	"C_Scooter_Transport_01_F"
 ];
 
 //Essential List - Random Spawns.
@@ -153,7 +159,8 @@ staticPlaneList =
 [
 	"B_Plane_CAS_01_F",
 	"O_Plane_CAS_02_F",
-	"I_Plane_Fighter_03_CAS_F"
+	"I_Plane_Fighter_03_CAS_F",
+	"C_Plane_Civil_01_F"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
@@ -182,7 +189,18 @@ vehicleWeapons =
 	"arifle_MXM_F",
 	"srifle_EBR_F",
 	"LMG_Mk200_F",
-	"LMG_Zafir_F"
+	"LMG_Zafir_F",
+	"arifle_SPAR_01_blk_F",
+	"arifle_CTAR_blk_F",
+	"arifle_CTAR_GL_blk_F",
+	"arifle_ARX_ghex_F",
+	"arifle_AKS_F",
+	"arifle_AKM_F",
+	"arifle_AK12_F",
+	"arifle_AK12_GL_F",
+	"srifle_DMR_07_blk_F",
+	"arifle_SPAR_03_blk_F",
+	"SMG_05_F"
 ];
 
 vehicleAddition =
