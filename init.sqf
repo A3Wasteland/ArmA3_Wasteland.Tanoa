@@ -85,6 +85,14 @@ if (isServer) then
 
 if (hasInterface || isServer) then
 {
+	// Added
+	[] execVM "addons\laptop\init.sqf";
+	[] execVM "addons\vactions\functions.sqf";
+	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf";
+	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
+	[] execVM "addons\JTS_PM\Functions.sqf";			  
+
 	//init 3rd Party Scripts
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
@@ -98,7 +106,7 @@ if (hasInterface || isServer) then
 // Remove line drawings from map
 (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
 [
-	"!triggerActivated thisTrigger", 
+	"!triggerActivated thisTrigger",
 	"thisTrigger setTriggerTimeout [30,30,30,false]",
 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
 ];
