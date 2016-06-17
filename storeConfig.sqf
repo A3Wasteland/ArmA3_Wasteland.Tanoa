@@ -87,12 +87,14 @@ rifleArray = compileFinal str
 	["AK-12 GL Rifle", "arifle_AK12_GL_F", 3000],
 
 	// Marksman Rifles
+
 	["MXM Rifle", "arifle_MXM_F", 3000],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 3000],
 	["MXM Rifle (Khaki)", "arifle_MXM_khk_F", 3000, "noDLC"],
 	["Rahim DMR Rifle", "srifle_DMR_01_F", 3750],
 	["DMR Rifle", "srifle_DMR_01_F", 3750],
 	["Mk18 ABR Rifle", "srifle_EBR_F", 4500],
+
 
 	// DLC
 	["CMR-76 Rifle", "srifle_DMR_07_blk_F", 4000],
@@ -198,7 +200,7 @@ staticGunsArray = compileFinal str
 	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 60000],
 	["Mk6 Mortar", "B_Mortar_01_F", 125000],
 	["Mk6 Mortar", "O_Mortar_01_F", 125000],
-	["Mk6 Mortar", "I_Mortar_01_F", 12500]
+	["Mk6 Mortar", "I_Mortar_01_F", 125000]
 ];
 
 throwputArray = compileFinal str
@@ -318,7 +320,7 @@ ammoArray = compileFinal str
 //Text name, classname, buy cost, item class
 accessoriesArray = compileFinal str
 [
-<<<<<<< HEAD
+
 	["Suppressor 9mm", "muzzle_snds_L", 500, "item"],
 	["Suppressor .45 ACP", "muzzle_snds_acp", 750, "item"],
 	["Suppressor 5.56mm", "muzzle_snds_M", 1000, "item"],
@@ -388,77 +390,7 @@ accessoriesArray = compileFinal str
 	["TWS", "optic_tws", 50000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS MG", "optic_tws_mg", 60000, "item", "HIDDEN"],
 	["Nightstalker", "optic_Nightstalker", 75000, "item", "HIDDEN"]
-=======
-	["Suppressor 9mm", "muzzle_snds_L", 50, "item"],
-	["Suppressor .45 ACP", "muzzle_snds_acp", 75, "item"],
-	["Suppressor 5.56mm", "muzzle_snds_M", 100, "item"],
-	["Suppressor 5.56mm (Khaki)", "muzzle_snds_m_khk_F", 100, "item"],
-	["Suppressor 5.56mm (Sand)", "muzzle_snds_m_snd_F", 100, "item"],
-	["Suppressor 5.8mm", "muzzle_snds_58_blk_F", 100, "item"],
-	["Suppressor 5.8mm (G Hex)", "muzzle_snds_58_wdm_F", 100, "item"],
-	["Suppressor 6.5mm", "muzzle_snds_H", 100, "item"],
-	["Suppressor 6.5mm (Khaki)", "muzzle_snds_H_khk_F", 100, "item"],
-	["Suppressor 6.5mm (Sand)", "muzzle_snds_H_snd_F", 100, "item"],
-	["Suppressor 6.5mm LMG", "muzzle_snds_H_MG", 125, "item"],
-	["Suppressor 6.5mm LMG (Black)", "muzzle_snds_H_MG_blk_F", 125, "item"],
-	["Suppressor 6.5mm LMG (Khaki)", "muzzle_snds_H_MG_khk_F", 125, "item"],
-	["Suppressor Type 115", "muzzle_snds_65_TI_blk_F", 125, "item"],
-	["Suppressor Type 115 (Hex)", "muzzle_snds_65_TI_hex_F", 125, "item"],
-	["Suppressor Type 115 (G Hex)", "muzzle_snds_65_TI_ghex_F", 125, "item"],
-	["Suppressor 7.62mm", "muzzle_snds_B", 125, "item"],
-	["Suppressor 7.62mm (Khaki)", "muzzle_snds_B_khk_F", 125, "item"],
-	["Suppressor 7.62mm (Sand)", "muzzle_snds_B_snd_F", 125, "item"],
-	["Suppressor .338", "muzzle_snds_338_black", 150, "item"],
-	["Suppressor .338 (Green)", "muzzle_snds_338_green", 150, "item"],
-	["Suppressor .338 (Sand)", "muzzle_snds_338_sand", 175, "item"],
-	["Suppressor 9.3mm", "muzzle_snds_93mmg", 175, "item"],
-	["Suppressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 175, "item"],
-	["Bipod (NATO)", "bipod_01_F_blk", 100, "item", "noDLC"],
-	["Bipod (CSAT)", "bipod_02_F_blk", 100, "item", "noDLC"],
-	["Bipod (AAF)", "bipod_03_F_blk", 100, "item", "noDLC"],
-	["Bipod (MTP)", "bipod_01_F_mtp", 100, "item", "noDLC"],
-	["Bipod (Hex)", "bipod_02_F_hex", 100, "item", "noDLC"],
-	["Bipod (Olive)", "bipod_03_F_oli", 100, "item", "noDLC"],
-	["Bipod (Sand)", "bipod_01_F_snd", 100, "item", "noDLC"],
-	["Bipod (Tan)", "bipod_02_F_tan", 100, "item", "noDLC"],
-	["Bipod (Khaki)", "bipod_01_F_khk", 100, "item"],
-	["Flashlight", "acc_flashlight", 25, "item"],
-	["IR Laser Pointer", "acc_pointer_IR", 25, "item"],
-	["Yorris Sight (Zubr Revolver)", "optic_Yorris", 50, "item"],
-	["MRD Sight (4-Five Pistol)", "optic_MRD", 50, "item"],
-	["ACO SMG (Red)", "optic_aco_smg", 50, "item"],
-	["ACO SMG (Green)", "optic_ACO_grn_smg", 50, "item"],
-	["ACO (Red)", "optic_Aco", 75, "item"],
-	["ACO (Green)", "optic_Aco_grn", 75, "item"],
-	["Holosight SMG", "optic_Holosight_smg", 50, "item"],
-	["Holosight", "optic_Holosight", 75, "item"],
-	["MRCO", "optic_MRCO", 100, "item"],
-	["ERCO", "optic_ERCO_blk_F", 100, "item"],
-	["ERCO (Khaki)", "optic_ERCO_khk_F", 100, "item"],
-	["ERCO (Sand)", "optic_ERCO_snd_F", 100, "item"],
-	["ARCO", "optic_Arco", 125, "item"],
-	["ARCO (Black)", "optic_Arco_blk_F", 125, "item"],
-	["ARCO (G Hex)", "optic_Arco_ghex_F", 125, "item"],
-	["RCO", "optic_Hamr", 150, "item"],
-	["RCO (Khaki)", "optic_Hamr_khk_F", 150, "item"],
-	["MOS", "optic_SOS", 150, "item"],
-	["MOS (Khaki)", "optic_SOS_khk_F", 150, "item"],
-	["DMS", "optic_DMS", 175, "item"],
-	["Kahlia (Sightless)", "optic_KHS_old", 200, "item"],
-	["Kahlia", "optic_KHS_blk", 225, "item"],
-	["Kahlia (Hex)", "optic_KHS_hex", 225, "item"],
-	["Kahlia (Tan)", "optic_KHS_tan", 225, "item"],
-	["AMS", "optic_AMS", 250, "item"],
-	["AMS (Khaki)", "optic_AMS_khk", 250, "item"],
-	["AMS (Sand)", "optic_AMS_snd", 250, "item"],
-	["LRPS", "optic_LRPS", 300, "item"],
-	["LRPS (G Hex)", "optic_LRPS_ghex_F", 300, "item"],
-	["LRPS (Tropic)", "optic_LRPS_tna_F", 300, "item"],
-	["NVS", "optic_NVS", 500, "item"],
-	["TWS", "optic_tws", 5000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
-	["TWS MG", "optic_tws_mg", 6000, "item", "HIDDEN"],
-	["Nightstalker", "optic_Nightstalker", 7500, "item", "HIDDEN"]
->>>>>>> bad46d7999611f814558c6e90622b16de009b4ab
+
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -1081,7 +1013,6 @@ _texDir = "client\images\vehicleTextures\";
 _kartDir = "\A3\soft_f_kart\Kart_01\Data\";
 _mh9Dir = "\A3\air_f\Heli_Light_01\Data\";
 _mohawkDir = "\A3\air_f_beta\Heli_Transport_02\Data\";
-_taruDir = "\A3\air_f_heli\Heli_Transport_04\Data\";
 _wreckDir = "\A3\structures_f\wrecks\data\";
 _gorgonDir = "\A3\armor_f_gamma\APC_Wheeled_03\data\";
 
@@ -1198,31 +1129,13 @@ colorsArray = compileFinal str
 	[ // Taru paintjob
 		"Heli_Transport_04_base_F",
 		[
-			["Black (Taru)", [
-				[0, _taruDir + "heli_transport_04_base_01_black_co.paa"],
-				[1, _taruDir + "heli_transport_04_base_02_black_co.paa"],
-				[2, _taruDir + "heli_transport_04_pod_ext01_black_co.paa"],
-				[3, _taruDir + "heli_transport_04_pod_ext02_black_co.paa"]
-			]]
-		]
-	],
-	[ // Taru bench colors
-		"O_Heli_Transport_04_bench_F",
-		[
-			["Black (Taru)", [[2, _taruDir + "heli_transport_04_bench_black_co.paa"]]]
-		]
-	],
-	[ // Taru fuel colors
-		"O_Heli_Transport_04_fuel_F",
-		[
-			["Black (Taru)", [[2, _taruDir + "heli_transport_04_fuel_black_co.paa"]]]
+			["Black (Taru)", ["Black"]]
 		]
 	],
 	[ // Kajman paintjobs
 		"Heli_Attack_02_base_F",
 		[
-				["Black (Kajman)", ["Black"]],
--				[0, "\A3\air_f_beta\Heli_Attack_02\Data\heli_attack_02_body1_black_co.paa"],
+			["Black (Kajman)", ["Black"]],
 			["Rusty (Kajman)", [
 				[0, _wreckDir + "wreck_heli_attack_02_body1_co.paa"],
 				[1, _wreckDir + "wreck_heli_attack_02_body2_co.paa"]
