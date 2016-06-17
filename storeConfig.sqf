@@ -87,15 +87,12 @@ rifleArray = compileFinal str
 	["AK-12 GL Rifle", "arifle_AK12_GL_F", 3000],
 
 	// Marksman Rifles
-
 	["MXM Rifle", "arifle_MXM_F", 3000],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 3000],
 	["MXM Rifle (Khaki)", "arifle_MXM_khk_F", 3000, "noDLC"],
 	["Rahim DMR Rifle", "srifle_DMR_01_F", 3750],
 	["DMR Rifle", "srifle_DMR_01_F", 3750],
 	["Mk18 ABR Rifle", "srifle_EBR_F", 4500],
-
-
 	// DLC
 	["CMR-76 Rifle", "srifle_DMR_07_blk_F", 4000],
 	["CMR-76 Rifle (Hex)", "srifle_DMR_07_hex_F", 4000],
@@ -390,7 +387,6 @@ accessoriesArray = compileFinal str
 	["TWS", "optic_tws", 50000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS MG", "optic_tws_mg", 60000, "item", "HIDDEN"],
 	["Nightstalker", "optic_Nightstalker", 75000, "item", "HIDDEN"]
-
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -677,6 +673,18 @@ backpackArray = compileFinal str
 	["Kitbag (MTP)", "B_Kitbag_mcamo", 3500, "backpack"],
 	["Kitbag (Sage)", "B_Kitbag_sgg", 3500, "backpack"],
 
+	["Viper Light Harness (Black)", "B_ViperLightHarness_blk_F", 45000, "backpack", "noDLC"],
+	["Viper Light Harness (Hex)", "B_ViperLightHarness_hex_F", 4500, "backpack", "noDLC"],
+	["Viper Light Harness (G Hex)", "B_ViperLightHarness_ghex_F", 4500, "backpack", "noDLC"],
+	["Viper Light Harness (Khaki)", "B_ViperLightHarness_khk_F", 4500, "backpack", "noDLC"],
+	["Viper Light Harness (Olive)", "B_ViperLightHarness_oli_F", 4500, "backpack", "noDLC"],
+
+	["Viper Harness (Black)", "B_ViperHarness_blk_F", 4750, "backpack", "noDLC"],
+	["Viper Harness (Hex)", "B_ViperHarness_hex_F", 4750, "backpack", "noDLC"],
+	["Viper Harness (G Hex)", "B_ViperHarness_ghex_F", 4750, "backpack", "noDLC"],
+	["Viper Harness (Khaki)", "B_ViperHarness_khk_F", 4750, "backpack", "noDLC"],
+	["Viper Harness (Olive)", "B_ViperHarness_oli_F", 4750, "backpack", "noDLC"],
+
 	["Carryall (Khaki)", "B_Carryall_khk", 5000, "backpack"],
 	["Carryall (MTP)", "B_Carryall_mcamo", 5000, "backpack"],
 	["Carryall (Olive)", "B_Carryall_oli", 5000, "backpack"],
@@ -838,6 +846,7 @@ landArray = compileFinal str
 	["Offroad HMG", "B_G_Offroad_01_armed_F", 8000, "vehicle"],
 
 	["MB 4WD", "C_Offroad_02_unarmed_F", 3000, "vehicle"],
+	["MB 4WD (Guerilla)", "I_C_Offroad_02_unarmed_F", 3000, "vehicle"],
 
 	["Truck", "C_Van_01_transport_F", 1400, "vehicle"],
 	["Truck (Camo)", "B_G_Van_01_transport_F", 3600, "vehicle"],
@@ -1147,15 +1156,18 @@ colorsArray = compileFinal str
 		]
 	],
 	[ // Ghost Hawk camo
-		"Heli_Transport_01_base_F",
-		[
-			["Green (Ghost Hawk)", ["Green"]]
-		]
+	 	"Heli_Transport_01_base_F",
+	 	[
+		 	//["Black (Ghost Hawk)", ["Black"]], // default
+		 	["Olive (Ghost Hawk)", ["Green"]],
+		 	["Dazzle Black (Ghost Hawk)", ["Olive"]],
+		 	["Dazzle Tan (Ghost Hawk)", ["Sand"]]
+	 	]
 	],
 	[ // Strider NATO color
 		"MRAP_03_base_F",
 		[
-			["NATO Tan (Strider)", ["Blufor"]]
+			["Tan (Strider)", ["Blufor"]]
 		]
 	],
 	[ // Gorgon NATO color
@@ -1173,6 +1185,77 @@ colorsArray = compileFinal str
 		"Hatchback_01_base_F",
 		[
 			["Rusty (Hatchback)", [[0, _wreckDir + "civilcar_extwreck_co.paa"]]]
+		]
+	],
+	[ // Prowler paintjobs
+		"LSV_01_base_F",
+		[
+			["Olive (Prowler)", ["Olive"]],
+			["Dazzle (Prowler)", ["Dazzle"]],
+			["Black (Prowler)", ["Black"]],
+			["Tan (Prowler)", ["Sand"]]
+		]
+	],
+	[ // Qilin paintjobs
+		"LSV_02_base_F",
+		[
+			//["Green Hex (Qilin)", ["GreenHex"]], // default
+			["Hex (Qilin)", ["Arid"]],
+			["Black (Qilin)", ["Black"]]
+		]
+	],
+	[ // Blackfish paintjobs
+		"VTOL_01_base_F",
+		[
+			//["Olive (Blackfish)", ["Olive"]], // default
+			["Blue (Blackfish)", ["Blue"]]
+		]
+	],
+	[ // Xi'an paintjobs
+		"VTOL_02_base_F",
+		[
+			//["Green Hex (Xi'an)", ["GreenHex"]], // default
+			["Hex (Xi'an)", ["Hex"]],
+			["Gray Hex (Xi'an)", ["Grey"]]
+		]
+	],
+	[ // UGV paintjobs
+		"UGV_01_base_F",
+		[
+			["Tan (UGV)", ["Blufor"]],
+			["Hex (UGV)", ["Opfor"]],
+			["Digital (UGV)", ["Indep"]],
+			["Green Hex (UGV))", ["GreenHex"]]
+		]
+	],
+	[ // Ifrit GreenHex
+		"MRAP_02_base_F",
+		[
+			["Green Hex (Ifrit)", ["GreenHex"]]
+		]
+	],
+	[ // Tempest GreenHex
+		"Truck_03_base_F",
+		[
+			["Green Hex (Tempest)", ["GreenHex"]]
+		]
+	],
+	[ // Marid GreenHex
+		"APC_Wheeled_02_base_F",
+		[
+			["Green Hex (Marid)", ["GreenHex"]]
+		]
+	],
+	[ // Kamysh & Tigris GreenHex
+		"APC_Tracked_02_base_F",
+		[
+			["Green Hex (Kamysh)", ["GreenHex"]]
+		]
+	],
+	[ // Varsuk & Sochor GreenHex
+		"MBT_02_base_F",
+		[
+			["Green Hex (Varsuk)", ["GreenHex"]]
 		]
 	]
 ];
