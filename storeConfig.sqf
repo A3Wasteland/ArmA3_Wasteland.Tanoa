@@ -79,7 +79,7 @@ rifleArray = compileFinal str
 	["CAR-95 GL Rifle", "arifle_CTAR_GL_blk_F", 2500],
 	["Type 115 Rifle", "arifle_ARX_blk_F", 20000],
 	["Type 115 Rifle (Hex)", "arifle_ARX_hex_F", 20000],
-	["Type 115 Rifle (G Hex)", "arifle_ARX_ghex_F", 20000
+	["Type 115 Rifle (G Hex)", "arifle_ARX_ghex_F", 20000],
 
 	["AKS-74U Carbine", "arifle_AKS_F", 1500],
 	["AKM Rifle", "arifle_AKM_F", 2000],
