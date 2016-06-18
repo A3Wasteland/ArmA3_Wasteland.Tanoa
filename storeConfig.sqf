@@ -646,11 +646,7 @@ uniformArray = compileFinal str
   ["Bandit Clothes (Checkered)", "u_i_c_soldier_bandit_4_f", 100, "uni"],
   ["Bandit Clothes (Tee)", "u_i_c_soldier_bandit_3_f", 100, "uni"],
   ["Bandit Clothes (Skull)", "u_i_c_soldier_bandit_2_f", 100, "uni"],
-<<<<<<< HEAD
-  ["Bandit Clothes (Polo Shirt)", "u_i_c_soldier_bandit_1_f", 100, "uni"],
-=======
   ["Bandit Clothes (Polo Shirt)", "u_i_c_soldier_bandit_1_f", 100, "uni"]
->>>>>>> apex
 ];
 
 vestArray = compileFinal str
