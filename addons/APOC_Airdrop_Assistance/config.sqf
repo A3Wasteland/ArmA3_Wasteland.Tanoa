@@ -9,9 +9,9 @@ APOC_AA_VehOptions =
 	["Rescue Boat","C_Rubberboat",2000,"vehicle"],
 	["Offroad HMG","B_G_Offroad_01_armed_F",14000,"vehicle"],
 	["Hummingbird","B_Heli_Light_01_F",15000,"vehicle"],
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 50000, "vehicle"], // Armed AH-6
 	["UH-80 Ghost Hawk", "B_Heli_Transport_01_camo_F", 50000, "vehicle"],
 	["Strider HMG","I_MRAP_03_hmg_F",50000,"vehicle"],
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 75000, "vehicle"], // Armed AH-6
 	["CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F", 80000, "vehicle"],
 	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 80000, "vehicle"],
 	["ZSU-39 Tigris AA","O_APC_Tracked_02_AA_F",150000,"vehicle"],

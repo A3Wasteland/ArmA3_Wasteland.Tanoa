@@ -394,9 +394,9 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
-	["Gas Mask (NATO)", "H_CrewHelmetHeli_B", 10000, "hat"],
-	["Gas Mask (CSAT)", "H_CrewHelmetHeli_O", 10000, "hat"],
-	["Gas Mask (AAF)", "H_CrewHelmetHeli_I", 10000, "hat"],
+	["Gas Mask (NATO)", "H_CrewHelmetHeli_B", 5000, "hat"],
+	["Gas Mask (CSAT)", "H_CrewHelmetHeli_O", 5000, "hat"],
+	["Gas Mask (AAF)", "H_CrewHelmetHeli_I", 5000, "hat"],
 	["Wet Rags (white) [for gas]", "H_ShemagOpen_khk", 2500, "hat"],
 	["Wet Rags (Brown) [for gas]", "H_ShemagOpen_tan", 2500, "hat"],
 	["Wet Rags (Khaki) [for gas]", "H_Shemag_khk", 2500, "hat"],
@@ -409,7 +409,7 @@ headArray = compileFinal str
 	["Combat Helmet (Camonet)", "H_HelmetB_camo", 500, "hat"],
 
 	["Stealth Combat Helmet", "H_HelmetB_TI_tna_F", 750, "hat"],
-	["Special Combat Helmet", "H_HelmetO_ViperSP_hex_F", 100000, "hat"],
+	["Special Combat Helmet", "H_HelmetO_ViperSP_hex_F", 5000, "hat"],
 
 	["Enhanced Combat Helmet", "H_HelmetSpecB", 750, "hat"],
 	["Enhanced Combat Helmet (Black)", "H_HelmetSpecB_blk", 750, "hat"],
@@ -686,7 +686,7 @@ backpackArray = compileFinal str
 	["Kitbag (MTP)", "B_Kitbag_mcamo", 3500, "backpack"],
 	["Kitbag (Sage)", "B_Kitbag_sgg", 3500, "backpack"],
 
-	["Viper Light Harness (Black)", "B_ViperLightHarness_blk_F", 45000, "backpack", "noDLC"],
+	["Viper Light Harness (Black)", "B_ViperLightHarness_blk_F", 4500, "backpack", "noDLC"],
 	["Viper Light Harness (Hex)", "B_ViperLightHarness_hex_F", 4500, "backpack", "noDLC"],
 	["Viper Light Harness (G Hex)", "B_ViperLightHarness_ghex_F", 4500, "backpack", "noDLC"],
 	["Viper Light Harness (Khaki)", "B_ViperLightHarness_khk_F", 4500, "backpack", "noDLC"],
