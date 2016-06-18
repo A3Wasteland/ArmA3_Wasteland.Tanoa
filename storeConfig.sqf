@@ -557,7 +557,7 @@ uniformArray = compileFinal str
 	["Full Ghillie (Semi-Arid)", "U_I_FullGhillie_sard", 20000, "uni"],
 	["Full Ghillie (Jungle)", "U_B_T_FullGhillie_tna_F", 20000, "uni"],
 	["Full Ghillie (Jungle)", "U_O_T_FullGhillie_tna_F", 20000, "uni"],
-	["Full Ghillie (Jungle) [NATO]", "u_b_fullghillie_tna_f", 100, "uni"],
+	["Full Ghillie (Jungle) [NATO]", "u_b_fullghillie_tna_f", 20000, "uni"],
 	["CTRG Stealth Uniform", "U_B_CTRG_Soldier_F", 10000, "uni"],
 	["CTRG Stealth Uniform (Rolled-up)", "u_b_ctrg_soldier_3_f", 1000, "uni"],
 	["CTRG Stealth Uniform (Tee)", "u_b_ctrg_soldier_2_f", 1000, "uni"],
