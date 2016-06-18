@@ -55,7 +55,7 @@
 			_player addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
 			_player addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
 			_player addWeapon "arifle_SPAR_01_blk_F";
-			_player addPrimaryWeaponItem "optic_Hamr";
+			_player addPrimaryWeaponItem "optic_ERCO_blk_F";
 			_player addItem "HandGrenade";
 			_player addItem "HandGrenade";
 			_player addItem "SmokeShell";
@@ -63,7 +63,6 @@
 			_player addWeapon "hgun_P07_F";
 			_player addMagazine "16Rnd_9x21_Mag";
 			_player addMagazine "16Rnd_9x21_Mag";
-			_player addItem "Medikit";
 			_player addWeapon "Binoculars";
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
@@ -82,7 +81,7 @@
 			_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 			_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 			_player addWeapon "SMG_05_F";
-			_player addPrimaryWeaponItem "optic_aco_smg";
+			_player addPrimaryWeaponItem "optic_Aco_grn";
 			_player addItem "HandGrenade";
 			_player addItem "HandGrenade";
 			_player addWeapon "launch_RPG7_F";
@@ -91,8 +90,6 @@
 			_player addMagazine "11Rnd_45ACP_Mag";
 			_player addMagazine "11Rnd_45ACP_Mag";
 			_player addWeapon "hgun_Pistol_heavy_01_F";
-			_player addItem "Toolkit";
-			_player addItem "MineDetector";
 			_player addWeapon "Binoculars";
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
@@ -108,8 +105,6 @@
 			_player forceAddUniform "U_I_G_resistanceLeader_F";
 			_player addBackpack "B_AssaultPack_cbr";
 			_player addItemToVest "MineDetector";
-			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
-			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
 			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
 			_player addMagazine "6Rnd_45ACP_Cylinder";
 			_player addMagazine "6Rnd_45ACP_Cylinder";
