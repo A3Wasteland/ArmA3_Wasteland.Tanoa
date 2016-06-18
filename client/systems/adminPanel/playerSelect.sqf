@@ -48,6 +48,7 @@ if (_uid call isAdmin) then
 					if (!([player] call camera_enabled)) then
 					{
 						[] call camera_toggle;
+						["PlayerMgmt_Spectate", format ["%1 (%2)", name _target, getPlayerUID _target]] call notifyAdminMenu;
 					};
 
 					[player, _target] call camera_attach_to_target;
@@ -69,24 +70,29 @@ if (_uid call isAdmin) then
 			_warnText = ctrlText _warnMessage;
 			_playerName = name player;
 			[format ["Message from Admin: %1", _warnText], "A3W_fnc_titleTextMessage", _target, false] call A3W_fnc_MP;
+			["PlayerMgmt_Warn", format ["%1 (%2) - %3", name _target, getPlayerUID _target, _warnText]] call notifyAdminMenu;
 		};
 		case 2: //Slay
 		{
 			if (damage _target < 1) then // if check required to prevent "Killed" EH from getting triggered twice
- 			{
- 			    _target setVariable ["A3W_deathCause_remote", ["forcekill",serverTime], true];
- 				_target setDamage 1;
- 			};
+			{
+				_target setVariable ["A3W_deathCause_remote", ["forcekill",serverTime], true];
+				_target setDamage 1;
+			};
+
+			["PlayerMgmt_Slay", format ["%1 (%2)", name _target, getPlayerUID _target]] call notifyAdminMenu;
 		};
 		case 3: //Unlock Team Switcher
 		{
 			pvar_teamSwitchUnlock = getPlayerUID _target;
 			publicVariableServer "pvar_teamSwitchUnlock";
+			["PlayerMgmt_UnlockTeamSwitch", format ["%1 (%2)", name _target, getPlayerUID _target]] call notifyAdminMenu;
 		};
 		case 4: //Unlock Team Killer
 		{
 			pvar_teamKillUnlock = getPlayerUID _target;
 			publicVariableServer "pvar_teamKillUnlock";
+			["PlayerMgmt_UnlockTeamKill", format ["%1 (%2)", name _target, getPlayerUID _target]] call notifyAdminMenu;
 		};
 		case 5: //Remove All Money
 		{
@@ -97,6 +103,7 @@ if (_uid call isAdmin) then
 					_x setVariable["cmoney",0,true];
 				};
 			}forEach playableUnits;
+			["PlayerMgmt_RemoveMoney", format ["%1 (%2)", name _target, getPlayerUID _target]] call notifyAdminMenu;
 		};
 		case 6: //Remove All Weapons
 		{
