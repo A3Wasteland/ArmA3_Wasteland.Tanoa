@@ -87,12 +87,14 @@ rifleArray = compileFinal str
 	["AK-12 GL Rifle", "arifle_AK12_GL_F", 3000],
 
 	// Marksman Rifles
+
 	["MXM Rifle", "arifle_MXM_F", 3000],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 3000],
 	["MXM Rifle (Khaki)", "arifle_MXM_khk_F", 3000, "noDLC"],
 	["Rahim DMR Rifle", "srifle_DMR_01_F", 3750],
 	["DMR Rifle", "srifle_DMR_01_F", 3750],
 	["Mk18 ABR Rifle", "srifle_EBR_F", 4500],
+
 	// DLC
 	["CMR-76 Rifle", "srifle_DMR_07_blk_F", 4000],
 	["CMR-76 Rifle (Hex)", "srifle_DMR_07_hex_F", 4000],
@@ -317,7 +319,6 @@ ammoArray = compileFinal str
 //Text name, classname, buy cost, item class
 accessoriesArray = compileFinal str
 [
-
 	["Suppressor 9mm", "muzzle_snds_L", 500, "item"],
 	["Suppressor .45 ACP", "muzzle_snds_acp", 750, "item"],
 	["Suppressor 5.56mm", "muzzle_snds_M", 1000, "item"],
@@ -373,6 +374,7 @@ accessoriesArray = compileFinal str
 	["MOS", "optic_SOS", 1500, "item"],
 	["MOS (Khaki)", "optic_SOS_khk_F", 1500, "item"],
 	["DMS", "optic_DMS", 1750, "item"],
+	["DMS (G Hex)", "optic_DMS_ghex_F", 1750, "item"],
 	["Kahlia (Sightless)", "optic_KHS_old", 2000, "item"],
 	["Kahlia", "optic_KHS_blk", 2250, "item"],
 	["Kahlia (Hex)", "optic_KHS_hex", 2250, "item"],
@@ -655,7 +657,6 @@ vestArray = compileFinal str
 backpackArray = compileFinal str
 [
 	//["Parachute", "B_Parachute", 200, "backpack"],
-
 	["Assault Pack (Black)", "B_AssaultPack_blk", 1000, "backpack"],
 	["Assault Pack (Green)", "B_AssaultPack_rgr", 1000, "backpack"],
 	["Assault Pack (MTP)", "B_AssaultPack_mcamo", 1000, "backpack"],
@@ -1156,13 +1157,13 @@ colorsArray = compileFinal str
 		]
 	],
 	[ // Ghost Hawk camo
-	 	"Heli_Transport_01_base_F",
-	 	[
-		 	//["Black (Ghost Hawk)", ["Black"]], // default
-		 	["Olive (Ghost Hawk)", ["Green"]],
-		 	["Dazzle Black (Ghost Hawk)", ["Olive"]],
-		 	["Dazzle Tan (Ghost Hawk)", ["Sand"]]
-	 	]
+		"Heli_Transport_01_base_F",
+		[
+			//["Black (Ghost Hawk)", ["Black"]], // default
+			["Olive (Ghost Hawk)", ["Green"]],
+			["Dazzle Black (Ghost Hawk)", ["Olive"]],
+			["Dazzle Tan (Ghost Hawk)", ["Sand"]]
+		]
 	],
 	[ // Strider NATO color
 		"MRAP_03_base_F",
@@ -1173,7 +1174,7 @@ colorsArray = compileFinal str
 	[ // Gorgon NATO color
 		"APC_Wheeled_03_base_F",
 		[
-			["NATO Tan (Gorgon)", [
+			["Tan (Gorgon)", [
 				[0, _gorgonDir + "apc_wheeled_03_ext_co.paa"],
 				[1, _gorgonDir + "apc_wheeled_03_ext2_co.paa"],
 				[2, _gorgonDir + "rcws30_co.paa"],
