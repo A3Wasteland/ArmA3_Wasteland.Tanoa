@@ -773,7 +773,7 @@ genItemArray = compileFinal str
 	["Compact NVG (Hex)", "O_NVGoggles_hex_F", 1500, "nvg"],
 	["Compact NVG (G Hex)", "O_NVGoggles_ghex_F", 5000, "nvg"],
 	["Compact NVG (Urban)", "O_NVGoggles_urb_F", 5000, "nvg"],
-	["Improved NVG (Black)", "NVGogglesB_blk_F", 20000, "nvg", "HIDDEN"],
+	["Improved NVG (Black)", "NVGogglesB_blk_F", 20000, "nvg", "HIDDEN"], // these have thermal ffs
 	["Improved NVG (Green)", "NVGogglesB_grn_F", 20000, "nvg", "HIDDEN"],
 	["Improved NVG (Grey)", "NVGogglesB_gry_F", 20000, "nvg", "HIDDEN"],
 	["Diving Goggles", "G_Diving", 1000, "gogg"],
@@ -1008,7 +1008,7 @@ helicoptersArray = compileFinal str
 	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 100000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman", "O_Heli_Attack_02_F", 150000, "vehicle"], // Mi-28 with gunner
 
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 250000, "vehicle"]
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 250000, "vehicle", "HIDDEN"] // op
 ];
 
 planesArray = compileFinal str
@@ -1031,7 +1031,7 @@ planesArray = compileFinal str
 	["K40 Ababil-3 Missile UAV (AAF)", "I_UAV_02_F", 40000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 30000, "vehicle"],
 
-	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 40000, "vehicle"]
+	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 40000, "vehicle"n "HIDDEN"] // op
 ];
 
 boatsArray = compileFinal str
