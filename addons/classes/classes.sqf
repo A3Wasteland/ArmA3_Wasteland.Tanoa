@@ -81,7 +81,7 @@
 			_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 			_player addMagazine "30Rnd_9x21_Mag_SMG_02";
 			_player addWeapon "SMG_05_F";
-			_player addPrimaryWeaponItem "optic_Aco_grn";
+			_player addPrimaryWeaponItem "optic_Aco";
 			_player addItem "HandGrenade";
 			_player addItem "HandGrenade";
 			_player addWeapon "launch_RPG7_F";
