@@ -66,7 +66,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
  if (_type == _x select 1) then
  {
  _price = _x select 2;
- _price = _price / SELL_PRICE;
+ _price = _price / CHOPSHOP_PRICE_RELATIONSHIP;
  };
 } forEach (call allVehStoreVehicles);
 
