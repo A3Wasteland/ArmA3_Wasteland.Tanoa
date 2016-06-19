@@ -21,6 +21,6 @@
 		_markerName setMarkerTypeLocal "mil_dot";
 		_markerName setMarkerColorLocal "ColorGreen";
 		_markerName setMarkerSizeLocal [1,1];
-		_markerName setMarkerTextLocal "Armor Buyer";
+		_markerName setMarkerTextLocal "Armor Dump";
 	};
 } forEach entities "CAManBase";

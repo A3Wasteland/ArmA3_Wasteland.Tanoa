@@ -33,7 +33,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
  if (!(_vehicle isKindOf "Tank") && !(_vehicle isKindOf "Wheeled_APC_F")) exitWith {
 	 // We want to make sure they can only sell tanks.
 	 playSound "FD_CP_Not_Clear_F";
-	 [format ['Alex: "Your %1 does not wear the type of armor I am looking for. Bring me something better next time.', _objname], "Error"] call  BIS_fnc_guiMessage;
+	 [format ['Alex: "Your %1 does not wear the type of armor I am looking for. I only want APCs and tanks! Bring me one of those next time.', _objname], "Error"] call  BIS_fnc_guiMessage;
  };
 
  _objClass = typeOf _vehicle;
