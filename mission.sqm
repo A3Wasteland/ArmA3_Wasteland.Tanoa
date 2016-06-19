@@ -8,7 +8,7 @@ class EditorData
 	toggles=1026;
 	class ItemIDProvider
 	{
-		nextID=1284;
+		nextID=1286;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8702.1426,17.531139,13808.979};
-		dir[]={0.99407828,0.092096359,0.058501951};
-		up[]={-0.091927625,0.99574977,-0.0054103145};
-		aside[]={0.058750983,-6.7707151e-007,-0.99832785};
+		pos[]={1771.2252,26.767845,7993.1782};
+		dir[]={0.34681395,-0.79906178,0.49117804};
+		up[]={0.46089023,0.60124826,0.65274024};
+		aside[]={0.81690037,-5.356269e-007,-0.57679963};
 	};
 };
 binarizationWanted=0;
@@ -184,7 +184,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=947;
+		items=949;
 		class Item0
 		{
 			dataType="Group";
@@ -12421,7 +12421,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.24178;
+			angle=224.24176;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -27552,8 +27552,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8714.7178,11.722569,13805.393};
-				angles[]={0,4.4145541,0};
+				position[]={8716.5771,9.9938269,13804.989};
+				angles[]={0,2.7870951,0};
 			};
 			side="Empty";
 			flags=5;
@@ -27562,7 +27562,7 @@ class Mission
 			};
 			id=1283;
 			type="Land_LampShabby_F";
-			atlOffset=-2.6285706;
+			atlOffset=-4.3330474;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27585,6 +27585,123 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item947
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8722.8691,11.422327,13794.309};
+				angles[]={0,0.6062209,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1284;
+			type="Land_LampHarbour_F";
+			atlOffset=-1.8510609;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item948
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1774.7263,20.430965,7999.5869};
+				angles[]={0,5.8563628,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1285;
+			type="Land_LampShabby_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
