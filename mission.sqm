@@ -28096,8 +28096,8 @@ class Mission
 				position[]={2126.9241,12.95,3441.4341};
 				angles[]={0,6.1040101,0};
 			};
-			side="Empty";
-			flags=4;
+			side="Civilian";
+			flags=7;
 			class Attributes
 			{
 				init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -28114,7 +28114,8 @@ class Mission
 				position[]={2419.5459,13.472607,13337.7};
 				angles[]={0,6.2695894,0};
 			};
-			side="Empty";
+			side="Civilian";
+			flags=7;
 			class Attributes
 			{
 				init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -28198,8 +28199,8 @@ class Mission
 				position[]={11758.078,4.8501792,3095.6042};
 				angles[]={0,4.5301065,0};
 			};
-			side="Empty";
-			flags=4;
+			side="Civilian";
+			flags=7;
 			class Attributes
 			{
 				init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -28778,7 +28779,8 @@ class Mission
 				position[]={11826.318,7.3610001,13090.525};
 				angles[]={0,1.0490302,0};
 			};
-			side="Empty";
+			side="Civilian";
+			flags=7;
 			class Attributes
 			{
 				init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -29355,7 +29357,8 @@ class Mission
 				position[]={6962.5088,3.0709991,7380.0352};
 				angles[]={0,2.1270328,0};
 			};
-			side="Empty";
+			side="Civilian";
+			flags=7;
 			class Attributes
 			{
 				init="0 = [this] spawn A3W_fnc_setupStoreNPC";
