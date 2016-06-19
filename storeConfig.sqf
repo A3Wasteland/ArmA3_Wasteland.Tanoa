@@ -426,7 +426,6 @@ headArray = compileFinal str
 	["Defender Helmet (Hex)", "H_HelmetLeaderO_ocamo", 1000, "hat"],
 	["Defender Helmet (Urban)", "H_HelmetLeaderO_oucamo", 1000, "hat"],
 	["Defender Helmet (G Hex)", "H_HelmetLeaderO_ghex_F", 1000, "hat", "noDLC"],
-	["Skate Helmet", "h_helmet_skate0", 1000, "hat"],
 	["Pilot Helmet (NATO)", "H_PilotHelmetFighter_B", 600, "hat"],
 	["Pilot Helmet (CSAT)", "H_PilotHelmetFighter_O", 600, "hat"],
 	["Pilot Helmet (AAF)", "H_PilotHelmetFighter_I", 600, "hat"],

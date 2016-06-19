@@ -8,7 +8,7 @@ class EditorData
 	toggles=1026;
 	class ItemIDProvider
 	{
-		nextID=1282;
+		nextID=1283;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8731.8643,25.301582,13816.755};
-		dir[]={-0.20299871,-0.22126271,-0.95386702};
-		up[]={-0.046062183,0.97520691,-0.21643941};
-		aside[]={-0.97811049,-8.1141479e-008,0.2081589};
+		pos[]={1776.4214,30.452438,8001.8228};
+		dir[]={0.76155382,-0.64805639,-0.010314041};
+		up[]={0.64800715,0.76158255,-0.0087769572};
+		aside[]={-0.013543653,1.3622184e-007,-0.99993283};
 	};
 };
 binarizationWanted=0;
@@ -184,7 +184,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=945;
+		items=946;
 		class Item0
 		{
 			dataType="Group";
@@ -4334,7 +4334,6 @@ class Mission
 			colorName="ColorGUER";
 			angle=16.790106;
 			id=302;
-			atlOffset=0.079471588;
 		};
 		class Item144
 		{
@@ -12422,7 +12421,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.24181;
+			angle=224.24179;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -27435,8 +27434,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8720.8379,12.889158,13802.933};
-				angles[]={0,1.6881174,0};
+				position[]={8729.3408,11.547951,13789.687};
+				angles[]={0,0.6062209,0};
 			};
 			side="Empty";
 			flags=5;
@@ -27445,7 +27444,7 @@ class Mission
 			};
 			id=1281;
 			type="Land_LampHarbour_F";
-			atlOffset=-0.51000023;
+			atlOffset=-1.6817741;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27483,6 +27482,65 @@ class Mission
 								};
 							};
 							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item945
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1805.4799,17.729837,8007.4883};
+				angles[]={0,5.0826731,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1282;
+			type="Land_LampShabby_F";
+			atlOffset=-2.5886459;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
 						};
 					};
 				};
