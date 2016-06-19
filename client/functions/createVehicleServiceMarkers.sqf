@@ -9,7 +9,7 @@
 
 //Creates the markers around vehicle service points.
 {
-	if (!isPlayer _x && {(vehicleVarName _x) select [0,10] == "VehService"}) then
+	if (!isPlayer _x && {(vehicleVarName _x) select [0,8] == "VehService"}) then
 	{
 		_npcPos = getPosATL _x;
 
@@ -18,9 +18,9 @@
 		deleteMarkerLocal _markerName;
 		_marker = createMarkerLocal [_markerName, _npcPos];
 		_markerName setMarkerShapeLocal "ICON";
-		_markerName setMarkerTypeLocal "mil_dot";
-		_markerName setMarkerColorLocal "ColorYellow";
-		_markerName setMarkerSizeLocal [1,1];
+		_markerName setMarkerTypeLocal "marker_294";
+		_markerName setMarkerColorLocal "ColorOrange";
+		_markerName setMarkerSizeLocal [0.5,0.5];
 		_markerName setMarkerTextLocal "Vehicle Service";
 	};
 } forEach entities "CAManBase";
