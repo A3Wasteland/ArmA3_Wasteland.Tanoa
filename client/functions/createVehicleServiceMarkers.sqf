@@ -9,7 +9,7 @@
 
 //Creates the markers around vehicle service points.
 {
-	if (!isPlayer _x && {(vehicleVarName _x) select [0,8] == "VehService"}) then
+	if (!isPlayer _x && {(vehicleVarName _x) select [0,10] == "VehService"}) then
 	{
 		_npcPos = getPosATL _x;
 
