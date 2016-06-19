@@ -14,7 +14,7 @@ storeSellingHandle = _this spawn
 #define CHOPSHOP_PRICE_RELATIONSHIP 4
 #define VEHICLE_MAX_SELLING_DISTANCE 50
 
-private ["_vehicle","_type", "_price", "_confirmMsg", "_playerMoney", "_text"];
+private ["_vehicle","_type", "_price", "_confirmMsg", "_playerMoney", "_bmoney", "_text"];
 
 _storeNPC = _this select 0;
 _vehicle = objectFromNetId (player getVariable ["lastVehicleRidden", ""]);
@@ -33,7 +33,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 	if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) exitWith
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['"%1" is further away than %2m from the store.', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+		[format ['"%1" is further away than %2m from the servicepoint.', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 	};
 
 {
@@ -68,7 +68,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		  _vehicle setDamage 0;
 
 			player setVariable["cmoney",(player getVariable "cmoney")-_price,true];
-			[format ['Your %1 has been rearmed, repaired and refuelled!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "THANK YOU"] call  BIS_fnc_guiMessage;
+			hint parseText format ["<t color='#00d838'>Success!</t><br/>----------------<br/>Your %1 has been rearmed, repaired and refueled.'", _objname];
 
 		if (["A3W_playerSaving"] call isConfigOn) then
 		{

@@ -323,6 +323,7 @@ if (["A3W_survivalSystem"] call isConfigOn) then
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
 	[] execVM "client\functions\createArmorBuyerMarkers.sqf";
+	[] execVM "client\functions\createVehicleServiceMarkers.sqf";
 };
 
 [] spawn playerSpawn;
