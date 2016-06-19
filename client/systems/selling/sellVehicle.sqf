@@ -91,7 +91,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 			deleteVehicle _vehicle;
 
 			player setVariable["cmoney",(player getVariable "cmoney")+_price,true];
-			[format ['Alex: "Here is your money for the %1. Now go and bring me some more!"', _objname, VEHICLE_MAX_SELLING_DISTANCE], "THANK YOU"] call  BIS_fnc_guiMessage;
+			hint parseText format ["<t color='#00d838'>Alex: 'Here is your money for the %1. Now go and bring me some more!'</t><br/>Success.", _objname];
 
 		if (["A3W_playerSaving"] call isConfigOn) then
 		{
