@@ -1008,7 +1008,8 @@ helicoptersArray = compileFinal str
 	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 100000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman", "O_Heli_Attack_02_F", 150000, "vehicle"], // Mi-28 with gunner
 
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 250000, "vehicle", "HIDDEN"] // op
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 250000, "vehicle", "HIDDEN"] // OP AS F NO MATTER THE PRICE
+
 ];
 
 planesArray = compileFinal str
