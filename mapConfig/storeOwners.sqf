@@ -61,7 +61,7 @@ storeOwnerConfigAppearance = compileFinal str
 	["VehStore6", [["weapon", ""], ["uniform", "U_Competitor"]]],
 
 	["ArmStore1", [["weapon", ""], ["uniform", "U_Competitor"]]],
-	["ArmStore2", [["weapon", ""], ["uniform", "U_Competitor"]]]
+	["ArmStore2", [["weapon", ""], ["uniform", "U_Competitor"]]],
 
 	["VehService1", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
 	["VehService2", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
