@@ -49,7 +49,7 @@ if (hasInterface) then
 		};
 		case (["ArmStore", _npcName] call _startsWith):
 		{
-			_npc addAction ["<img image='client\icons\money.paa'/> Sell Armored Vehicle", "client\systems\selling\sellVehicle.sqf", [], 0.97, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
+			_npc addAction ["<img image='client\icons\store.paa'/> Sell Armored Vehicle", "client\systems\selling\sellVehicle.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
 		};
 	};
 
