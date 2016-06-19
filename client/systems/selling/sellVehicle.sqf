@@ -27,13 +27,13 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
  if (isNull _vehicle) exitWith
  {
 		playSound "FD_CP_Not_Clear_F";
-		["Your previous vehicle does not exist anymore.", "Error"] call  BIS_fnc_guiMessage;
+		['Alex: "Your vehicle has vanished..? Are you a wizard?"', "Error"] call  BIS_fnc_guiMessage;
  };
 
  if (!(_vehicle isKindOf "Tank") && !(_vehicle isKindOf "Wheeled_APC_F")) exitWith {
 	 // We want to make sure they can only sell tanks.
 	 playSound "FD_CP_Not_Clear_F";
-	 [format ['"%1" does not wear the type of armor I am looking for.', _objname], "Error"] call  BIS_fnc_guiMessage;
+	 [format ['Alex: "Your %1 does not wear the type of armor I am looking for. Bring me something better next time.', _objname], "Error"] call  BIS_fnc_guiMessage;
  };
 
  _objClass = typeOf _vehicle;
@@ -44,7 +44,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) then
 		{
 			 playSound "FD_CP_Not_Clear_F";
-			 [format [' The "%1" is further away than %2m from the store.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+			 [format ['Alex: "Bring your %1 within %2 meters so I can actually see the ware you have for offer!"', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			 false
 		} else { true };
  };
@@ -54,7 +54,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		if (!local _vehicle) then
 		{
 			 playSound "FD_CP_Not_Clear_F";
-			 [format ['You are not the owner of the "%1"', _objName], "Error"] call  BIS_fnc_guiMessage;
+			 [format ['Alex: "You are not the owner of the %1 over there!""', _objName], "Error"] call  BIS_fnc_guiMessage;
 			 false
 		} else { true };
  };
@@ -73,11 +73,11 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 	if (!isNil "_price") then
 	{
 		// Add total sell value to confirm message
-		_confirmMsg = format ["Selling the %1 will give you $%2<br/>", _objName, _price];
+		_confirmMsg = format ['Alex: "Your %1 is worth about... $%2.<br/>"', _objName, _price];
 		_confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t> x %1", _objName];
 
 		// Display confirm message
-		if ([parseText _confirmMsg, "Confirm", "SELL", true] call BIS_fnc_guiMessage) then
+		if ([parseText _confirmMsg, 'Alex"You sure? No returns!"', "SELL", true] call BIS_fnc_guiMessage) then
 		{
 
 		sleep (1 + (random 4));
@@ -91,7 +91,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 			deleteVehicle _vehicle;
 
 			player setVariable["cmoney",(player getVariable "cmoney")+_price,true];
-			[format ['The %1 has been sold!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "THANK YOU"] call  BIS_fnc_guiMessage;
+			[format ['Alex: "Here is your money for the %1. Now go and bring me some more!"', _objname, VEHICLE_MAX_SELLING_DISTANCE], "THANK YOU"] call  BIS_fnc_guiMessage;
 
 		if (["A3W_playerSaving"] call isConfigOn) then
 		{
