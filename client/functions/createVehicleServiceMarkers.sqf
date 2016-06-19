@@ -18,7 +18,7 @@
 		deleteMarkerLocal _markerName;
 		_marker = createMarkerLocal [_markerName, _npcPos];
 		_markerName setMarkerShapeLocal "ICON";
-		_markerName setMarkerTypeLocal "marker_294";
+		_markerName setMarkerTypeLocal "mil_triangle";
 		_markerName setMarkerColorLocal "ColorOrange";
 		_markerName setMarkerSizeLocal [0.5,0.5];
 		_markerName setMarkerTextLocal "Vehicle Service";

@@ -32,11 +32,11 @@ storeOwnerConfig = compileFinal str
 	["ArmStore1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
 	["ArmStore2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
 
-	["VehService1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
-	["VehService2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
-	["VehService3", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
-	["VehService4", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
-	["VehService5", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]]
+	["VehServe1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe3", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe4", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe5", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]]
 ];
 
 // Outfits for store owners
@@ -63,9 +63,9 @@ storeOwnerConfigAppearance = compileFinal str
 	["ArmStore1", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["ArmStore2", [["weapon", ""], ["uniform", "U_Competitor"]]],
 
-	["VehService1", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
-	["VehService2", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
-	["VehService3", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
-	["VehService4", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
-	["VehService5", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]]
+	["VehServe1", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe2", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe3", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe4", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe5", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]]
 ];
