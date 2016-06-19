@@ -23,4 +23,4 @@
 		_markerName setMarkerSizeLocal [0.5,0.5];
 		_markerName setMarkerTextLocal "Vehicle Service";
 	};
-} forEach entities "Helipad_base_F";
+} forEach entities "CAManBase";
