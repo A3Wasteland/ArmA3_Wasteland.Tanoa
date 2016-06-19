@@ -40,7 +40,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		// We want to make sure they can only sell tanks.
 		playSound "FD_CP_Not_Clear_F";
 		[format ['"%1" does not wear the type of armor I am looking for.', _objname], "Error"] call  BIS_fnc_guiMessage;
-	}
+	};
 
 		if !(player getVariable ["lastVehicleOwner", false]) exitWith
 	{
