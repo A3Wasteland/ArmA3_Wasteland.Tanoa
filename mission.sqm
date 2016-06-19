@@ -8,7 +8,7 @@ class EditorData
 	toggles=1026;
 	class ItemIDProvider
 	{
-		nextID=1283;
+		nextID=1284;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1776.4214,30.452438,8001.8228};
-		dir[]={0.76155382,-0.64805639,-0.010314041};
-		up[]={0.64800715,0.76158255,-0.0087769572};
-		aside[]={-0.013543653,1.3622184e-007,-0.99993283};
+		pos[]={8702.1426,17.531139,13808.979};
+		dir[]={0.99407828,0.092096359,0.058501951};
+		up[]={-0.091927625,0.99574977,-0.0054103145};
+		aside[]={0.058750983,-6.7707151e-007,-0.99832785};
 	};
 };
 binarizationWanted=0;
@@ -184,7 +184,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=946;
+		items=947;
 		class Item0
 		{
 			dataType="Group";
@@ -12421,7 +12421,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.24179;
+			angle=224.24178;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -27444,7 +27444,7 @@ class Mission
 			};
 			id=1281;
 			type="Land_LampHarbour_F";
-			atlOffset=-1.6817741;
+			atlOffset=-1.6817732;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27545,6 +27545,46 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item946
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8714.7178,11.722569,13805.393};
+				angles[]={0,4.4145541,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1283;
+			type="Land_LampShabby_F";
+			atlOffset=-2.6285706;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
