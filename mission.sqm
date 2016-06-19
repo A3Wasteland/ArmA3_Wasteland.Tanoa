@@ -29554,7 +29554,7 @@ class Mission
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService1";
+						name="VehServe1";
 					};
 					id=1439;
 					type="C_man_1_1_F";
@@ -29784,7 +29784,7 @@ class Mission
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService3";
+						name="VehServe3";
 					};
 					id=1462;
 					type="C_man_1_1_F";
@@ -30016,7 +30016,7 @@ class Mission
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService4";
+						name="VehServe4";
 					};
 					id=1467;
 					type="C_man_1_1_F";
@@ -30248,7 +30248,7 @@ class Mission
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService5";
+						name="VehServe5";
 					};
 					id=1472;
 					type="C_man_1_1_F";
@@ -30481,7 +30481,7 @@ class Mission
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService2";
+						name="VehServe2";
 					};
 					id=1477;
 					type="C_man_1_1_F";
