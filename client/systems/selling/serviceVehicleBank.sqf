@@ -39,8 +39,14 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 {
 	if (_type == _x select 1) then
 	{
-	_price = _x select 2;
-	_price = _price / CHOPSHOP_PRICE_RELATIONSHIP;
+		// If the vehicle costs less than 60000 in the store, it costs half of the normal resupply.
+		_price = _x select 2;
+		if (_price > 60000) then {
+			_price = 45000;
+		} else {
+			_price = 22500;
+		};
+	/*_price = _price / CHOPSHOP_PRICE_RELATIONSHIP;*/
 	};
 
 } forEach (call allVehStoreVehicles);

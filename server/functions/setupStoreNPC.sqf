@@ -53,8 +53,8 @@ if (hasInterface) then
 		};
 		case (["VehServe", _npcName] call _startsWith):
 		{
-			_npc addAction ["<img image='client\icons\store.paa'/> Service from CASH...", "client\systems\selling\serviceVehicleCash.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
-			_npc addAction ["<img image='client\icons\store.paa'/> Service from BANK...", "client\systems\selling\serviceVehicleBank.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
+			_npc addAction ["<img image='client\icons\store.paa'/> Service using CASH", "client\systems\selling\serviceVehicleCash.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
+			_npc addAction ["<img image='client\icons\store.paa'/> Service using BANK", "client\systems\selling\serviceVehicleBank.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
 		};
 	};
 
