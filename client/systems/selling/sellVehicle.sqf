@@ -30,7 +30,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		["Your previous vehicle does not exist anymore.", "Error"] call  BIS_fnc_guiMessage;
  };
 
- if !(_vehicle isKindOf "Tank") exitWith {
+ if (!(_vehicle isKindOf "Tank") && !(_vehicle isKindOf "Wheeled_APC_F")) exitWith {
 	 // We want to make sure they can only sell tanks.
 	 playSound "FD_CP_Not_Clear_F";
 	 [format ['"%1" does not wear the type of armor I am looking for.', _objname], "Error"] call  BIS_fnc_guiMessage;
