@@ -8,7 +8,7 @@ class EditorData
 	toggles=1026;
 	class ItemIDProvider
 	{
-		nextID=1476;
+		nextID=1478;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2353.7458,84.721077,13381.59};
-		dir[]={-0.79337078,-0.56737572,-0.22074409};
-		up[]={-0.54663497,0.82343626,-0.15209231};
-		aside[]={-0.26806346,-1.3341196e-007,0.96344024};
+		pos[]={2093.0378,26.130711,3484.8538};
+		dir[]={0.30231625,-0.30589926,-0.90280497};
+		up[]={0.097137213,0.95205802,-0.29007918};
+		aside[]={-0.94825912,-4.7960202e-007,-0.31753719};
 	};
 };
 binarizationWanted=0;
@@ -12457,7 +12457,7 @@ class Mission
 			name="LandConvoy_2_1";
 			type="Empty";
 			colorName="ColorEAST";
-			angle=224.2417;
+			angle=224.24168;
 			id=840;
 			atlOffset=-243.9091;
 		};
@@ -29661,6 +29661,7 @@ class Mission
 			};
 			id=1452;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=-2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29719,6 +29720,7 @@ class Mission
 			};
 			id=1455;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=-2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29774,62 +29776,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2095.092,13.321439,3439.4241};
-						angles[]={0,1.2943537,0};
-					};
-					side="Civilian";
-					flags=7;
-					class Attributes
-					{
-						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
-						name="VehService2";
-					};
-					id=1457;
-					type="C_man_1_1_F";
-					atlOffset=0.00024795532;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1456;
-			atlOffset=0.00024795532;
-		};
-		class Item1053
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={11755.088,5.2253871,3115.2031};
 						angles[]={0,3.7975571,0};
 					};
@@ -29874,7 +29820,7 @@ class Mission
 			id=1461;
 			atlOffset=0.54500008;
 		};
-		class Item1054
+		class Item1053
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29932,7 +29878,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1055
+		class Item1054
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29991,7 +29937,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1056
+		class Item1055
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30050,7 +29996,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1057
+		class Item1056
 		{
 			dataType="Group";
 			side="Civilian";
@@ -30106,12 +30052,12 @@ class Mission
 			id=1466;
 			atlOffset=0.52999973;
 		};
-		class Item1058
+		class Item1057
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11818.894,8.7375002,13070.769};
+				position[]={11816.512,8.7375002,13071.5};
 				angles[]={0,3.4496608,0};
 			};
 			side="Empty";
@@ -30164,7 +30110,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1059
+		class Item1058
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30179,6 +30125,66 @@ class Mission
 			};
 			id=1469;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=-4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item1059
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11812.339,8.6498737,13068.11};
+				angles[]={0,3.3831851,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1470;
+			type="Land_Mil_WallBig_4m_F";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30223,64 +30229,6 @@ class Mission
 			};
 		};
 		class Item1060
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11812.339,8.6498737,13068.11};
-				angles[]={0,3.3831851,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=1470;
-			type="Land_Mil_WallBig_4m_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item1061
 		{
 			dataType="Group";
 			side="Civilian";
@@ -30336,7 +30284,7 @@ class Mission
 			id=1471;
 			atlOffset=6.8664551e-005;
 		};
-		class Item1062
+		class Item1061
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30395,7 +30343,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1063
+		class Item1062
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30454,7 +30402,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1064
+		class Item1063
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30512,6 +30460,60 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item1064
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2093.3208,13.322413,3439.459};
+						angles[]={0,1.4080619,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
+						name="VehService2";
+					};
+					id=1477;
+					type="C_man_1_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1476;
 		};
 	};
 };

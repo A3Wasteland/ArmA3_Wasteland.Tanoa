@@ -30,7 +30,13 @@ storeOwnerConfig = compileFinal str
 	["VehStore6", -1, [], ["Boats"]],
 
 	["ArmStore1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
-	["ArmStore2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]]
+	["ArmStore2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+
+	["VehService1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehService2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehService3", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehService4", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehService5", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]]
 ];
 
 // Outfits for store owners
@@ -56,4 +62,10 @@ storeOwnerConfigAppearance = compileFinal str
 
 	["ArmStore1", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["ArmStore2", [["weapon", ""], ["uniform", "U_Competitor"]]]
+
+	["VehService1", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehService2", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehService3", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehService4", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehService5", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]]
 ];
