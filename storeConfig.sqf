@@ -1032,7 +1032,6 @@ planesArray = compileFinal str
 	["K40 Ababil-3 Missile UAV (AAF)", "I_UAV_02_F", 40000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 30000, "vehicle"]
 	/*["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 40000, "vehicle"n "HIDDEN"] // op*/
-	];
 ];
 
 boatsArray = compileFinal str
