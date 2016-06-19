@@ -91,7 +91,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 			deleteVehicle _vehicle;
 
 			player setVariable["cmoney",(player getVariable "cmoney")+_price,true];
-			hint parseText format ["<t color='#00d838'>Alex: 'Here is your money for the %1. Now go and bring me some more!'</t><br/>Success.", _objname];
+			hint parseText format ["<t color='#00d838'>Success!</t><br/>----------------<br/>Alex: 'Here is your money for the %1. Now go and bring me some more!'", _objname];
 
 		if (["A3W_playerSaving"] call isConfigOn) then
 		{
