@@ -12876,7 +12876,7 @@ class Mission
 						angles[]={0,1.8429106,0};
 					};
 					side="Civilian";
-					flags=2;
+					flags=7;
 					class Attributes
 					{
 						init="0 = [this] spawn A3W_fnc_setupStoreNPC";
@@ -12885,29 +12885,6 @@ class Mission
 					id=879;
 					type="C_Man_casual_5_F";
 					atlOffset=0.26399994;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
