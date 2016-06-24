@@ -94,6 +94,73 @@ switch (_boxType) do
 			["itm", ["muzzle_snds_B", ["muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand"], ["muzzle_snds_93mmg", "muzzle_snds_93mmg_tan"]], RANDOM_BETWEEN(1,4)]
 		];
 	};
+	case "mission_DLCSnipers":
+	{
+		_boxItems =
+		[
+		["wep", "Rangefinder", RANDOM_BETWEEN(1,4)],
+		["wep", ["srifle_LRR_tna_LRPS_F", "srifle_LRR_tna_LRPS_F", "srifle_GM6_LRPS_F", "srifle_GM6_ghex_LRPS_F"], RANDOM_BETWEEN(1,4), RANDOM_BETWEEN(5,10)],
+		["wep", [["srifle_DMR_07_blk_F", "srifle_DMR_07_blk_F", "srifle_DMR_07_blk_F"], // MAR-10
+						 ["arifle_SPAR_03_blk_F", "arifle_SPAR_03_blk_F", "arifle_SPAR_03_blk_F", "srifle_DMR_03_tan_F", "srifle_DMR_03_woodland_F"], // Mk-I
+						 ["arifle_SPAR_03_blk_F", "srifle_DMR_05_hex_F", "srifle_DMR_05_tan_f"], // Cyrus
+						 ["srifle_DMR_06_camo_F", "arifle_SPAR_03_blk_F"]] /* Mk14 */, RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(5,10)],
+		["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(5,10)],
+		["itm", ["optic_SOS", "optic_DMS", "optic_LRPS"], RANDOM_BETWEEN(2,4)],
+		["itm", ["optic_AMS", "optic_AMS_khk", "optic_AMS_snd", "optic_KHS_blk", "optic_KHS_hex", "optic_KHS_tan"], RANDOM_BETWEEN(1,3)],
+		["itm", ["optic_tws", "optic_tws_mg", "optic_Nightstalker"], RANDOM_ODDS(0.5)], // o shit waddup!!
+		["itm", "optic_NVS", RANDOM_BETWEEN(0,2)],
+		["itm", ["bipod_01_F_blk", "bipod_01_F_mtp", "bipod_01_F_snd", "bipod_02_F_blk", "bipod_02_F_hex", "bipod_02_F_tan", "bipod_03_F_blk", "bipod_03_F_oli"], RANDOM_BETWEEN(1,4)],
+		["itm", ["muzzle_snds_B", ["muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand"], ["muzzle_snds_93mmg", "muzzle_snds_93mmg_tan"]], RANDOM_BETWEEN(1,4)]
+
+		];
+	};
+	case "mission_DLCLMGs":
+	{
+		_boxItems =
+		[
+			// Item type, Item class(es), # of items, # of magazines per weapon
+			//["itm", "NVGoggles", 5],
+			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(0,3)],
+			["itm", "Medikit", RANDOM_BETWEEN(1,3)],
+			["itm", "Toolkit", RANDOM_BETWEEN(1,3)],
+			["itm", ["optic_Aco", "optic_Aco_grn", "optic_MRCO", "optic_Hamr", "optic_Arco"], RANDOM_BETWEEN(2,4)],
+			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp", ["muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand"], ["muzzle_snds_93mmg", "muzzle_snds_93mmg_tan"]], RANDOM_BETWEEN(1,5)],
+			["wep", [["arifle_CTARS_blk_F", "arifle_CTARS_blk_F", "arifle_CTARS_blk_F"], ["arifle_CTARS_blk_F", "arifle_CTARS_blk_F"]], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
+			["wep", ["arifle_SPAR_02_blk_F", "arifle_SPAR_02_blk_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
+			["wep", ["LMG_03_F", "LMG_03_F"], RANDOM_BETWEEN(0,2), RANDOM_BETWEEN(4,8)],
+			["wep", "arifle_SDAR_F", RANDOM_BETWEEN(0,2), RANDOM_BETWEEN(3,5)],
+			["wep", ["hgun_Pistol_heavy_01_F", "hgun_Pistol_heavy_01_MRD_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_heavy_02_Yorris_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,8)],
+			["mag", "150Rnd_556x45_Drum_Mag_Tracer_F", RANDOM_BETWEEN(5,10)],
+			["mag", "200Rnd_556x45_Box_Tracer_F", RANDOM_BETWEEN(5,10)],
+			["mag", "200Rnd_556x45_Box_F", RANDOM_BETWEEN(5,10)],
+			["mag", "9Rnd_45ACP_Mag", RANDOM_BETWEEN(5,10)],
+			["mag", "16Rnd_9x21_Mag", RANDOM_BETWEEN(5,10)]
+		];
+	};
+	case "mission_DLCRifles":
+	{
+		_boxItems =
+		[
+			// Item type, Item class(es), # of items, # of magazines per weapon
+			//["itm", "NVGoggles", 5],
+			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(0,3)],
+			["itm", "Medikit", RANDOM_BETWEEN(1,3)],
+			["itm", "Toolkit", RANDOM_BETWEEN(1,3)],
+			["itm", ["optic_Aco", "optic_Aco_grn", "optic_MRCO", "optic_Hamr", "optic_Arco"], RANDOM_BETWEEN(2,4)],
+			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp", ["muzzle_snds_338_black", "muzzle_snds_338_green", "muzzle_snds_338_sand"], ["muzzle_snds_93mmg", "muzzle_snds_93mmg_tan"]], RANDOM_BETWEEN(1,5)],
+			["wep", [["arifle_SPAR_01_blk_F", "arifle_CTAR_blk_F", "arifle_CTAR_GL_blk_F"], ["arifle_ARX_ghex_F", "arifle_AKS_F"]], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
+			["wep", ["arifle_AK12_GL_F", "arifle_AK12_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
+			["wep", ["arifle_AKM_F", "arifle_AKM_F"], RANDOM_BETWEEN(0,2), RANDOM_BETWEEN(4,8)],
+			["wep", "SMG_05_F", RANDOM_BETWEEN(0,2), RANDOM_BETWEEN(3,5)],
+			["wep", ["hgun_Pistol_heavy_01_F", "hgun_Pistol_heavy_01_MRD_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_heavy_02_Yorris_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,8)],
+			["mag", "150Rnd_556x45_Drum_Mag_Tracer_F", RANDOM_BETWEEN(3,7)],
+			["mag", "30Rnd_545x39_Mag_F", RANDOM_BETWEEN(5,10)],
+			["mag", "30Rnd_9x21_Mag_SMG_02", RANDOM_BETWEEN(5,10)],
+			["mag", "30Rnd_545x39_Mag_F", RANDOM_BETWEEN(5,10)],
+			["mag", "30Rnd_762x39_Mag_Tracer_F", RANDOM_BETWEEN(5,10)],
+			["mag", "30Rnd_762x39_Mag_Tracer_Green_F", RANDOM_BETWEEN(5,10)]
+		];
+	};
 };
 
 [_box, _boxItems] call processItems;

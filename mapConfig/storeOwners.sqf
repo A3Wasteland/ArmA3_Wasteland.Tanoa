@@ -27,7 +27,16 @@ storeOwnerConfig = compileFinal str
 	["VehStore3", -1, [], []],
 	["VehStore4", -1, [], ["Planes"]],
 	["VehStore5", -1, [], ["Planes"]],
-	["VehStore6", -1, [], ["Boats"]]
+	["VehStore6", -1, [], ["Boats"]],
+
+	["ArmStore1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["ArmStore2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+
+	["VehServe1", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe2", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe3", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe4", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]],
+	["VehServe5", -1, [], ["Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"]]
 ];
 
 // Outfits for store owners
@@ -49,5 +58,14 @@ storeOwnerConfigAppearance = compileFinal str
 	["VehStore3", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["VehStore4", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["VehStore5", [["weapon", ""], ["uniform", "U_Competitor"]]],
-	["VehStore6", [["weapon", ""], ["uniform", "U_Competitor"]]]
+	["VehStore6", [["weapon", ""], ["uniform", "U_Competitor"]]],
+
+	["ArmStore1", [["weapon", ""], ["uniform", "U_Competitor"]]],
+	["ArmStore2", [["weapon", ""], ["uniform", "U_Competitor"]]],
+
+	["VehServe1", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe2", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe3", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe4", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]],
+	["VehServe5", [["weapon", ""], ["uniform", "U_C_WorkerCoveralls"], ["headgear", "H_Bandanna_surfer_blk"]], ["goggles", "G_Sport_Red"]]
 ];

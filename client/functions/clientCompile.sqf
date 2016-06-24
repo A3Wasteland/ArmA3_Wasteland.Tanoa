@@ -69,6 +69,7 @@ spawnAction = "client\functions\spawnAction.sqf" call mf_compile;
 spawnInTown = "client\functions\spawnInTown.sqf" call mf_compile;
 spawnOnBeacon = "client\functions\spawnOnBeacon.sqf" call mf_compile;
 spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
+classes = "addons\classes\classes.sqf" call mf_compile;
 // placeSpawnBeacon = "client\systems\playerMenu\placeSpawnBeacon.sqf" call mf_compile;
 // refuelVehicle = "client\systems\playerMenu\refuel.sqf" call mf_compile;
 // repairVehicle = "client\systems\playerMenu\repair.sqf" call mf_compile;

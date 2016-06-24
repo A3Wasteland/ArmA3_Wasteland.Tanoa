@@ -38,9 +38,10 @@ for "_i" from 1 to _nbUnits do
 	removeGoggles _unit;
 
 	_unit addVest "V_PlateCarrier1_rgr";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 
 	switch (true) do
 	{
@@ -71,12 +72,12 @@ for "_i" from 1 to _nbUnits do
 
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "arifle_TRG21_F";
+				_unit addWeapon "arifle_SPAR_01_blk_F";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addWeapon "arifle_TRG20_F";
+				_unit addWeapon "arifle_SPAR_01_blk_F";
 			};
 		};
 	};

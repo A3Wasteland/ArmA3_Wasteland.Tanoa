@@ -53,6 +53,29 @@ switch (true) do
 			["You've taken out your earplugs.", 5] call mf_notify_client;
 		};
 	};
+
+	// Emergency Eject - Del Key
+	case (_key in A3W_customKeys_Eject):
+	{
+		[-9, false, true, ""] execVM "client\actions\forceEject.sqf";
+	};
+
+	// Holster /Unholster Weapon - H Key
+	// A3 v1.58 bug, holstering handgun while crouched causes infinite anim loop
+	case (_key in A3W_customKeys_holster):
+	{
+
+		if (currentweapon player != "" && (stance player != 'CROUCH' || currentWeapon player != handgunWeapon player)) then
+		{
+			player action ["SwitchWeapon", player, player, 100];
+			["You holstered your weapon!", 5] call mf_notify_client;
+		}
+		else
+		{
+			player action ["SwitchWeapon", player, player, 0];
+			["You Unholster your weapon!", 5] call mf_notify_client;
+		};
+	};
 };
 
 // ********** Action keys **********
@@ -60,28 +83,33 @@ switch (true) do
 // Parachute
 if (!_handled && _key in actionKeys "GetOver") then
 {
-	if (!alive player) exitWith {};
-
-	_veh = vehicle player;
-
-	if (_veh == player) exitWith
+	if (alive player) then
 	{
-		// allow opening parachute only above 2.5m
-		if ((getPos player) select 2 > 2.5) then
-		{
-			true call A3W_fnc_openParachute;
-			_handled = true;
-		};
-	};
+		_veh = vehicle player;
 
-	// 1 sec cooldown after parachute is deployed so you don't start falling again if you double-tap the key
-	if (_veh isKindOf "ParachuteBase" && (isNil "A3W_openParachuteTimestamp" || {diag_tickTime - A3W_openParachuteTimestamp >= 1})) then
-	{
-		moveOut player;
-		_veh spawn
+		if (_veh == player) then
 		{
-			sleep 1;
-			deleteVehicle _this;
+			if ((getPos player) select 2 > 2.5) then
+			{
+				true call A3W_fnc_openParachute;
+				_handled = true;
+			};
+		}
+		else
+		{
+			if (_veh isKindOf "ParachuteBase") then
+			{
+				// 1s cooldown after parachute is deployed so you don't start falling again if you double-tap the key
+				if (isNil "openParachuteTimestamp" || {diag_tickTime - openParachuteTimestamp >= 1}) then
+				{
+					moveOut player;
+					_veh spawn
+					{
+						sleep 1;
+						deleteVehicle _this;
+					};
+				};
+			};
 		};
 	};
 };
@@ -134,5 +162,6 @@ if (!_handled && _key in (actionKeys "UavView" + actionKeys "UavViewToggle")) th
 		_handled = true;
 	};
 };
+
 
 _handled

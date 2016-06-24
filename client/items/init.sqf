@@ -16,6 +16,9 @@
 [_this, "warchest"] call mf_init;
 [_this, "cratemoney"] call mf_init;
 
+[_this, "vpin"] call mf_init;
+
+
 if (["A3W_atmEnabled"] call isConfigOn) then
 {
 	[_this, "atm"] call mf_init;

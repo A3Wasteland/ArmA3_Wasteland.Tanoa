@@ -25,13 +25,13 @@ _setupObjects =
 	// pick the vehicles for the convoy
 	_convoyVeh = if (missionDifficultyHard) then
 	{
-		["I_G_Offroad_01_armed_F", "I_Truck_02_transport_F", "I_G_Offroad_01_F"]
+		["B_T_LSV_01_armed_F", "I_Truck_02_transport_F", "C_Offroad_02_unarmed_F"]
 	}
 	else
 	{
 		[
 			["B_Quadbike_01_F", "C_Van_01_box_F", "B_Quadbike_01_F"],
-			["I_G_Offroad_01_F", "I_Truck_02_transport_F", "I_G_Offroad_01_F"]
+			["C_Offroad_02_unarmed_F", "I_Truck_02_transport_F", "C_Offroad_02_unarmed_F"]
 		] call BIS_fnc_selectRandom;
 	};
 
