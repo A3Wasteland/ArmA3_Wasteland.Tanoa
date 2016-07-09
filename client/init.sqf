@@ -135,9 +135,23 @@ if (["A3W_survivalSystem"] call isConfigOn) then
 [] spawn
 {
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
+
+	if (["A3W_privateParking"] call isConfigOn) then
+	{
+		waitUntil {!isNil "parking_functions_defined"};
+	};
+
+	if (["A3W_privateStorage"] call isConfigOn) then
+	{
+		waitUntil {!isNil "storage_functions_defined"};
+	};
+
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
+	[] execVM "client\functions\createLegendMarkers.sqf";
 };
+
+A3W_clientSetupComplete = compileFinal "true";
 
 [] spawn playerSpawn;
 
@@ -162,6 +176,3 @@ inGameUISetEventHandler ["Action", "_this call A3W_fnc_inGameUIActionEvent"];
 		_x setVariable ["side", playerSide, true];
 	};
 } forEach pvar_spawn_beacons;
-
-{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "Air";
-{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "UGV_01_base_F";

@@ -60,7 +60,7 @@ drawPlayerIcons_thread = [] spawn
 
 	_bluforOpfor = playerSide in [BLUFOR,OPFOR];
 
-	_detectedMinesDisabled = (difficultyOption "detectedMines" == 0);
+	_detectedMinesDisabled = (round difficultyOption "detectedMines" < 2);
 	_mineIcon = getText (configfile >> "CfgInGameUI" >> "Cursor" >> "explosive");
 	_mineColor = getArray (configfile >> "CfgInGameUI" >> "Cursor" >> "explosiveColor");
 
@@ -186,7 +186,7 @@ drawPlayerIcons_thread = [] spawn
 				} forEach detectedMines playerSide;
 			};
 
-			if (_noBuiltInThermal) then
+			if (_noBuiltInThermal || (currentWeapon player) select [0,15] == "Laserdesignator") then
 			{
 				_thermalActive = currentVisionMode player isEqualTo 2;
 

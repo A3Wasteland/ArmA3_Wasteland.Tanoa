@@ -330,12 +330,6 @@ while {true} do
 		showUavFeed false;
 	};
 
-	// Force show chat
-	if (!shownChat) then
-	{
-		showChat true;
-	};
-
 	if (isNil "A3W_missingMarkersNotice" && visibleMap) then
 	{
 		_cbMarkerColors = findDisplay 12 displayCtrl 1090;
@@ -358,5 +352,6 @@ while {true} do
 		};
 	};
 
+	enableEnvironment true;
 	uiSleep 1;
 };
