@@ -16,8 +16,8 @@ civilianVehicles =
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
 	"C_SUV_01_F",
-	"C_Offroad_01_F",
-	"C_Offroad_02_unarmed_F",
+	["C_Offroad_01_F", "I_G_Offroad_01_F"],
+	["C_Offroad_02_unarmed_F", "I_C_Offroad_02_unarmed_F"],
 	["C_Van_01_box_F", "C_Van_01_transport_F"]
 ];
 
@@ -26,8 +26,7 @@ lightMilitaryVehicles =
 [
 	["B_CTRG_LSV_01_light_F", "B_T_LSV_01_unarmed_F"],
 	"O_T_LSV_02_unarmed_F",
-	"I_C_Offroad_02_unarmed_F",
-	["I_G_Offroad_01_F", "I_G_Offroad_01_armed_F"]
+	"I_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
@@ -103,7 +102,7 @@ vehicleAddition =
 [
 	"muzzle_snds_L", // 9mm
 	"muzzle_snds_M", // 5.56mm
-	"muzzle_snds_58_blk_F" // 5.8mm
+	"muzzle_snds_58_blk_F", // 5.8mm
 	"muzzle_snds_H", // 6.5mm
 	"muzzle_snds_H_MG", // 6.5mm LMG
 	"muzzle_snds_B", // 7.62mm
