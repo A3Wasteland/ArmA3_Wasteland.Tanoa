@@ -25,6 +25,9 @@ groupManagmentActive = false;
 pvar_PlayerTeamKiller = [];
 doCancelAction = false;
 
+//AJ Beacondetector
+BeaconScanInProgress = false;
+
 //Initialization Variables
 playerCompiledScripts = false;
 playerSetupComplete = false;
@@ -160,6 +163,10 @@ A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 [] execVM "client\functions\drawPlayerIcons.sqf";
 [] execVM "addons\camera\functions.sqf";
 [] execVM "addons\UAV_Control\functions.sqf";
+[] execVM "addons\water_edge\functions.sqf";
+
+//Status Bar
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 [] execVM "client\functions\drawPlayerMarkers.sqf";
@@ -176,3 +183,15 @@ inGameUISetEventHandler ["Action", "_this call A3W_fnc_inGameUIActionEvent"];
 		_x setVariable ["side", playerSide, true];
 	};
 } forEach pvar_spawn_beacons;
+
+{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "Air";
+{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "UGV_01_base_F";
+
+{
+	{
+		if (!isPlayer _x) then
+		{
+			_x setName ["AI","",""];
+		};
+	} forEach crew _x;
+} forEach allUnitsUAV;

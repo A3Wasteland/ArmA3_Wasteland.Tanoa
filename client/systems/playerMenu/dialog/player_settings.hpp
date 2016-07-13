@@ -45,14 +45,14 @@ class playerSettings {
 
 		class waterIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\water.paa";
+			text = "client\icons\tt.paa";
 			x = 0.022; y = 0.2;
 			w = 0.04 / (4/3); h = 0.04;
 		};
 
 		class foodIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\food.paa";
+			text = "client\icons\support.paa";
 			x = 0.022; y = 0.26;
 			w = 0.04 / (4/3); h = 0.04;
 		};
@@ -155,6 +155,14 @@ class playerSettings {
 			idc = groupButton;
 			text = "Group Management";
 			onButtonClick = "[] execVM 'client\systems\groups\loadGroupManagement.sqf'";
+			x = 0.158; y = 0.57;
+			w = 0.225; h = 0.033 * safezoneH;
+		};
+		
+		class TOParmaInfoButton : w_RscButton {
+			idc = GFSButton;
+			text = "GFS Gaming Info";
+			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadTOParmaInfo.sqf'";
 			x = 0.158; y = 0.66;
 			w = 0.225; h = 0.033 * safezoneH;
 		};
