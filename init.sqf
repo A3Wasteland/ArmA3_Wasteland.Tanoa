@@ -28,7 +28,7 @@ X_Server = false;
 X_Client = false;
 X_JIP = false;
 
-CHVD_allowTerrain = false;
+CHVD_allowTerrain = true;
 CHVD_maxView = 3000; // Set maximum view distance (default: 12000)
 CHVD_maxObj = 3000; // Set maximimum object view distance (default: 12000)
 
@@ -89,6 +89,13 @@ if (isServer) then
 
 if (hasInterface || isServer) then
 {
+	// Custom
+	[] execVM "addons\vactions\functions.sqf";
+	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+	[] execVM "addons\HvT\HvT.sqf";  //High value target 
+	//[] execVM "addons\clean\clean.sqf"; //Disabled for now to check the Wasteland default cleanup
+	//[] execVM "addons\loyalty\LoginrewardScript.sqf"; //Need to fix
+	
 	//init 3rd Party Scripts
 	[] execVM "addons\parking\functions.sqf";
 	[] execVM "addons\storage\functions.sqf";

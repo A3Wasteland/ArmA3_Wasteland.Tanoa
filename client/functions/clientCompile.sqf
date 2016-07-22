@@ -74,6 +74,7 @@ spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
 // placeSpawnBeacon = "client\systems\playerMenu\placeSpawnBeacon.sqf" call mf_compile;
 // refuelVehicle = "client\systems\playerMenu\refuel.sqf" call mf_compile;
 // repairVehicle = "client\systems\playerMenu\repair.sqf" call mf_compile;
+classes = "addons\classes\classes.sqf" call mf_compile;
 
 // Sync client with server time
 timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;
@@ -104,6 +105,7 @@ populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" ca
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
 vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;
 weaponInfo = "client\systems\gunStore\weaponInfo.sqf" call mf_compile;
+loadTOParmaInfo = "addons\TOParmaInfo\loadTOParmaInfo.sqf" call mf_compile;
 
 if (isNil "A3W_fnc_MP") then { A3W_fnc_MP = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MP.sqf" };
 if (isNil "A3W_fnc_MPexec") then { A3W_fnc_MPexec = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MPexec.sqf" };
