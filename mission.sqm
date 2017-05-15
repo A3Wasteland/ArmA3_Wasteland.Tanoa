@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=0.5;
@@ -56,56 +56,56 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="A3_Structures_F_Exp_Industrial";
 			name="Arma 3 Apex - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -118,7 +118,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="A3Wasteland Tanoa v1.3b"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
+		briefingName="A3Wasteland Tanoa v1.3c"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
 		overviewText="Wasteland survival sandbox by Team Wasteland - visit A3Wasteland.com for more details";
 		resistanceWest=0;
 		timeOfChanges=3e+038;
@@ -12494,7 +12494,7 @@ class Mission
 						textures="Orange";
 					};
 					id=849;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 					atlOffset=-2.3841858e-007;
 				};
 				class Item1
@@ -12514,7 +12514,7 @@ class Mission
 						textures="Orange";
 					};
 					id=850;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 				};
 				class Item2
 				{
@@ -12533,7 +12533,7 @@ class Mission
 						textures="Orange";
 					};
 					id=851;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 					atlOffset=-3.7670135e-005;
 				};
 				class Item3
@@ -12553,7 +12553,7 @@ class Mission
 						textures="Orange";
 					};
 					id=852;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 					atlOffset=-1.7642975e-005;
 				};
 				class Item4
@@ -12573,7 +12573,7 @@ class Mission
 						textures="Orange";
 					};
 					id=853;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 					atlOffset=-0.026942968;
 				};
 				class Item5
@@ -12593,7 +12593,7 @@ class Mission
 						textures="Orange";
 					};
 					id=854;
-					type="I_Truck_02_box_F";
+					type="C_Truck_02_box_F";
 					atlOffset=-7.6293945e-006;
 				};
 				class Item6
