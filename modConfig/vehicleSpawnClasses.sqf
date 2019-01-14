@@ -81,7 +81,30 @@ A3W_planeSpawnOdds = 0.5; // 0.0 to 1.0
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-	["SMG_01_F" /*Vermin*/, "SMG_02_F" /*Sting*/, "SMG_05_F" /*MP5*/, "hgun_PDW2000_F"],
+	[
+		"hgun_PDW2000_F",
+		"SMG_01_F", // Vermin
+		"SMG_02_F", // Sting
+		"SMG_05_F", // Protector
+		[
+			"SMG_03_black", // ADR-97
+			"SMG_03_camo",
+			"SMG_03_hex",
+			"SMG_03_khaki",
+			"SMG_03_TR_black",
+			"SMG_03_TR_camo",
+			"SMG_03_TR_hex",
+			"SMG_03_TR_khaki",
+			"SMG_03C_black",
+			"SMG_03C_camo",
+			"SMG_03C_hex",
+			"SMG_03C_khaki",
+			"SMG_03C_TR_black",
+			"SMG_03C_TR_camo",
+			"SMG_03C_TR_hex",
+			"SMG_03C_TR_khaki"
+		]
+	],
 	["arifle_TRG20_F", "arifle_TRG21_F", "arifle_TRG21_GL_F"],
 	["arifle_Mk20C_F", "arifle_Mk20_F", "arifle_Mk20_GL_F"],
 	["arifle_Katiba_F", "arifle_Katiba_C_F", "arifle_Katiba_GL_F"],
@@ -102,6 +125,7 @@ vehicleAddition =
 [
 	"muzzle_snds_L", // 9mm
 	"muzzle_snds_M", // 5.56mm
+	"muzzle_snds_570", // 5.7mm
 	"muzzle_snds_58_blk_F", // 5.8mm
 	"muzzle_snds_H", // 6.5mm
 	"muzzle_snds_H_MG", // 6.5mm LMG
